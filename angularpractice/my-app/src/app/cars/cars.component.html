@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<ul >
+    <li *ngFor = "let carPart of carParts">
+    <h2>{{carPart.name}}</h2>
+    <p>{{carPart.description}}</p>
+    <p *ngIf = "carPart.instock > 0">{{carPart.instock}}</p>
+    <p *ngIf = "carPart.instock == 0">no stock present</p></li>
+</ul>
+
+
+
+
